@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 신년 계획 버킷리스트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Brush+Script&family=Orbit&display=swap" rel="stylesheet">    <link href="style.css" rel="stylesheet" />
+</head>
+<body >
+    <div class="bg">
+    <h1 class="title">Bucketlist</h1>
+    <button type="button" id="musicButton" onclick="playMusic()">▶</button>
+    <audio id="backgroundMusic" loop>
+        <source src="./assets/sounds/bgm.mp3" type="audio/mpeg">
+    </audio>
+    
+    <p class="msg">꿈은 꾸는 것이 아닌, 이루는 것이다.</p>
+    <div class="add-section">
+        <button type="button" class="add-button">꿈 추가하기</button>
+        <div class="add-form" >
+            <select class="importance">
+                <option value="높음">높음</option>
+                <option value="중간">중간</option>
+            </select>
+            <input type="text" class="bucket-content" placeholder="꿈을 입력하세요">
+            <button type="button" class="submit-button">추가하기</button>
+        </div>
+        
+    </div>
+    <div class="bucketlist">
+        <div class="bucket">
+            이사하기
+            <div class="bucket-buttons">
+                <button type="complete">완료</button>
+                <button type="delete">삭제</button>
+            </div>
+        </div>
+        <div class="bucket">내일 친구들 만나기</div>
+        <div class="bucket">쫑이 생일파티하기</div>
+        <div class="bucket">홍콩 가기</div>
+        <div class="bucket">쫑이랑 놀러가기</div>
+        <div class="bucket">휴가가기</div>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

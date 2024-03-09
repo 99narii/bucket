@@ -1,0 +1,122 @@
+body {
+    background-image: url('./assets/images/background.jpg');
+    font-family: "Orbit", sans-serif;
+
+}
+.bg {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: rgb(212, 132, 138);
+}
+.add-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-button {
+    margin-top: 1em;
+    background-color: rgb(212, 132, 138);
+    color: #fff;
+    font-weight: 600;
+    font-family: "Orbit", sans-serif;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3em 2em;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.add-form {
+    margin-top: 1em;
+    background-color: #fff;
+    padding: 1em 3em;
+    border-radius: 6px;
+}
+.importance {
+    border: none;
+    width: 5em;
+}
+.add-form input {
+    border: none;
+    border-bottom: 1px solid #515151;
+}
+.submit-button {
+    border: none;
+    background-color: rgb(212, 132, 138);
+    padding: 0.3em 1em;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.submit-button:hover {
+
+}
+.bucketlist {
+    margin-top: 1em;
+    padding: 2em;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;
+    gap: 1em;
+    border-radius: 1em;
+    background-color: #313131;
+}
+.high-importance {
+    background-image: url('./assets/images/memo2.png');
+
+}
+
+.bucket {
+    background-image: url('./assets/images/memo1.png');
+    width: calc(50% - 2em); /* 기본 설정 유지, 화면 크기에 따라 조정될 수 있음 */
+    max-width: 200px; /* 버킷의 최대 너비를 설정 */
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    color: #515151;
+    padding: 1em 2em;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: "Hi Melody", sans-serif;
+}
+.bucket:hover {
+    color: rgb(212, 132, 138);
+}
+
+.bucket-buttons {
+    display: none; /* 기본적으로 버튼을 숨깁니다 */
+    
+}
+.bucket-buttons button {
+    border: none;
+    background-color: #515151;
+    color: #fff;
+}
+
+.bucket:hover .bucket-buttons {
+    display: block; /* .bucket 위에 마우스를 올리면 버튼이 보입니다 */
+}
+
+
+@media (max-width: 768px) {
+    .bucket {
+        width: calc(38% - 2em); /* 두 항목이 한 줄에 표시되도록 너비 조정 */
+        font-size: 1em;
+    }
+}
