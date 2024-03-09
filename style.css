@@ -33,7 +33,7 @@ body {
     text-align: center;
     padding: 0.3em 2em;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 .add-form {
     margin-top: 1em;
@@ -72,11 +72,15 @@ body {
     border-radius: 1em;
     background-color: #313131;
 }
-.high-importance {
-    background-image: url('./assets/images/memo2.png');
 
+#musicButton {
+    background-color: #313131;
+    border-radius: 2em;
+    padding: 0.5em 0.7em;
+    color: #fff;
+    border: none;
+    
 }
-
 .bucket {
     background-image: url('./assets/images/memo1.png');
     width: calc(50% - 2em); /* 기본 설정 유지, 화면 크기에 따라 조정될 수 있음 */
@@ -103,20 +107,33 @@ body {
     display: none; /* 기본적으로 버튼을 숨깁니다 */
     
 }
+
 .bucket-buttons button {
     border: none;
     background-color: #515151;
     color: #fff;
+    padding: 0.2em 0.5em;
 }
-
 .bucket:hover .bucket-buttons {
-    display: block; /* .bucket 위에 마우스를 올리면 버튼이 보입니다 */
+    display: flex; /* 버킷 위에 호버하면 버튼 컨테이너를 표시 */
+    flex-direction: row; /* 버튼을 세로로 정렬 */
+    gap: 0.2em;
 }
-
 
 @media (max-width: 768px) {
+    .bg {
+        width: 100%;
+    }
+    .bucketlist {
+        width: 80%;
+    }
     .bucket {
         width: calc(38% - 2em); /* 두 항목이 한 줄에 표시되도록 너비 조정 */
         font-size: 1em;
+    }
+    .add-form {
+        width: 90%;
+        padding: 1em 1.5em;
+        
     }
 }
